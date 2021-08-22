@@ -88,7 +88,7 @@ section{
 }
 
 .image-container{
-  position: relative; // TODO: you can delete it
+  // position: relative; // TODO: you can delete it
   max-width: 350px;
 
 }
@@ -259,11 +259,6 @@ header{
       font-size: 3rem;
       width: fit-content;
       text-shadow: 0 4px 6px rgba(0,0,0,0.8);
-      // background-size: cover;
-      // background: url('../../assets/images/tyson-hzNavqkrQUA-unsplash.jpg') center;
-      // background-clip: text;
-      // --webkit-background-clip: text;
-
     }
   }
 }
