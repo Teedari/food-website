@@ -1,9 +1,8 @@
 $('document').ready(function(){
 
 
-  // Menu Toggle Function
 
-
+  /** METHODS | FUNCTIONS  **/
   const activateMenu = () =>{
     const togglerMenuDiv = $('.tee-nav__menu');
     const togglerButton = $('.tee-nav__toggler');
@@ -15,7 +14,6 @@ $('document').ready(function(){
         $(this).addClass('active')
         togglerButton.children().first().removeClass(icon_menu).addClass(icon_close)
       })
-      return;
     }
   }
 
@@ -29,7 +27,6 @@ $('document').ready(function(){
         $(this).removeClass('active')
         togglerButton.children().first().removeClass(icon_close).addClass(icon_menu)
       })
-      return;
     }
   }
 
@@ -38,6 +35,9 @@ $('document').ready(function(){
     activateMenu()
     disableMenu()
   }
+
+
+  /*** ACTIONS ***/
 
   $('.tee-nav__toggler').on('click', togglerMenu)
 
