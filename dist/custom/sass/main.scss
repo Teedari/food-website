@@ -257,10 +257,12 @@ header{
       color: rgba($color: lighten(Colors('secondary'), 20), $alpha: .8);
       font-weight: 700;
       font-size: 3rem;
+      width: fit-content;
       text-shadow: 0 4px 6px rgba(0,0,0,0.8);
-      background: url('../../assets/images/tyson-hzNavqkrQUA-unsplash.jpg') center;
-      background-size: cover;
-      background-clip: text;
+      // background-size: cover;
+      // background: url('../../assets/images/tyson-hzNavqkrQUA-unsplash.jpg') center;
+      // background-clip: text;
+      // --webkit-background-clip: text;
 
     }
   }
