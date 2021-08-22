@@ -1,0 +1,170 @@
+@import './includes/variables.scss';
+@import './includes/mixins.scss';
+
+
+*,*::after, *::before,html{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: $font-family;
+  
+
+  
+
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+section{
+  padding: 2rem 0;
+}
+
+//COMPONENT
+.tee-heading{
+
+  text-align: center;
+  h6{
+    color: $first-color;
+    font-size: 1.2em;
+   
+  }
+  p{
+    color: darken($color: $first-color, $amount: 20);
+
+    font-size: 1.5rem;
+    
+    font-weight: 600;
+  }
+}
+
+.tee-card{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__image{
+    width: 200px;
+    height: 250px;
+    display: grid;
+    place-items: center;
+   
+    img{
+      width: inherit;
+      height: inherit;
+
+      // width: 80%;
+      // object-fit: contain;
+    }
+  }
+  &__content{
+   p, h5{
+    color: black !important;
+   }
+  }
+}
+
+.image-container{
+  max-width: 350px;
+
+}
+header{
+  background: $dark;
+  min-height: 100vh;
+
+
+
+
+
+  .tee-nav{
+    // background-color: #ccc;
+    padding: 1rem 0;
+    .container{
+      display: flex !important;
+      justify-content: space-between !important;
+      align-items: center;
+    }
+
+
+
+    &__toggler{
+      cursor: pointer;
+      transition: $transition-sm-delay linear;
+      &:hover{
+        @extend .scaleUp;
+      }
+    }
+
+    &__menu{
+      position: fixed;
+      display: none;
+    }
+  }
+
+  //LOGO
+  .tee-logo{
+
+    h2{
+      font-size: 1.5em;
+      text-align: end;
+      span{
+        font-size: 2rem;
+      }
+
+      i, span{
+        color: $first-color-accent !important;
+      }
+      span{
+        font-weight: 800;
+      }
+    }
+  }
+
+
+
+  .tee-icon-box{
+    i{
+      font-size: 2rem;
+    }
+  }
+}
+
+//HERO
+.hero{
+  color:#f4f4f4;
+  &-content{
+    h3{
+      display: flex;
+      flex-flow: column;
+      gap: .5rem;
+      text-align: center;
+      &:nth-last-of-type(1){
+        font-size: 1.8em;
+        color: $first-color-accent;
+        span{
+          font-size: 4rem;
+          color: $first-color-accent;
+        }
+      }
+
+    }
+  } // end hero-content
+
+  &-image{
+    display: flex;
+    justify-content: center;
+    .image{
+      max-width: 380px;
+    }
+  }// end hero-image
+}
+
+//INFO
+
+.info{
+  background: $gray;
+}
+

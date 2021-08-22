@@ -1,0 +1,23 @@
+.tee-flex{
+  display: flex;
+}
+
+.center{
+  @extend .tee-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tee-container{
+  color: red;
+}
+
+
+
+
+
+//Transition and animation
+.scaleUp{
+  transform: scale(1.1);
+  transition: $transition-sm-delay linear;
+}
