@@ -1,9 +1,18 @@
 // COLORS
 
 $dark: #1a1a16;
-$first-color:  #00aa95;
-$first-color-accent: #FA9A00;
-$gray: #bfbfba;
+$color-1:  #00aa95;
+$color-2: #FA9A00;
+$color-3: #bfbfba;
+$color-4: #f4f4f4;
+
+
+$colors : (
+  "primary": $color-1,
+  "secondary": $color-2,
+  "dark": $color-3,
+  "white": $color-4
+);
 
 // MEDIA QUERY
 $screen-mobile: 480px;
@@ -14,7 +23,7 @@ $screen-lg: 1201px;
 
 // FONT
 $font-family: 'Poppins', sans-serif;
-$text-color-1: #f4f4f4;
+$text-color-1: map-get($map: $colors, $key: 'white');
 
 
 // custom variables

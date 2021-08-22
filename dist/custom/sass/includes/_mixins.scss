@@ -12,7 +12,27 @@
   color: red;
 }
 
+//Buttons
+@mixin createButton($key) {
+  .tee-#{$key}{
+    &__btn{
+      background-color: Colors($key);
+      color: Colors('white');
+  
+      &:hover{
+        background-color: darken($color: Colors($key), $amount: 10);
+        color: Colors('white');
+      }
+    }
+  }
+}
 
+
+
+//Functions
+@function Colors($key){
+ @return map-get($map: $colors, $key: $key);
+}
 
 
 
