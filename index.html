@@ -31,11 +31,11 @@
         <div class="tee-icon-box tee-nav__toggler">
           <i class="fa fa-reorder"></i>
         </div>
-        <div class="tee-nav__menu">
-          <ul>
+        <div class="tee-nav__menu d-flex justify-content-center align-items-center">
+          <ul class="list-unstyled d-flex flex-column align-items-center gap-4">
             <li><a href="">Home</a></li>
-            <li><a href="">What's poppin</a></li>
-            <li><a href="">Finest receipe</a></li>
+            <li><a href="#section-dishes">What's poppin</a></li>
+            <li><a href="#section-poppin">Finest receipe</a></li>
             <li><a href="">Contact</a></li>
           </ul>
         </div>
@@ -47,7 +47,7 @@
           <div class="hero-content">
             <h3>Finally the dish you've been waiting on your table</h3>
             <h3>The <span>belly</span> rules the mind.</h3>
-            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nihtempore, deleniti ducimus!</p>
+            <p class="text-center text-truncated">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nihtempore, deleniti ducimus!</p>
   
           </div>
         </div>
@@ -61,7 +61,7 @@
       </div>
     </div>
   </header> <!--/Header-->
-  <section class='' >
+  <section class='' id='section-dishes' >
     <div class="container">
       <div class="tee-heading">
         <h6>Our special dish</h6>
@@ -117,7 +117,7 @@
     </div>
     
   </section>
-  <section class="">
+  <section class="" id="section-poppin">
     <div class="container">
       <div class="tee-heading">
         <h6>What's happening at the moment</h6>
@@ -129,16 +129,17 @@
             <img class='' src="./dist/assets/svgs/svg1.svg" alt="">
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="tee-heading text-end">
+        <div class="col-md-6 py-4">
+          <div class="tee-heading">
             
             <h6>Order your best food anytime</h6>
           </div>
-          <p class='text-end'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore nemo repellendus est non vero consectetur doloribus rem accusamus labore perspiciatis! Iure adipisci quos error. Sequi dolor error deserunt deleniti ipsum.</p>
+          <p class='text-center'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore nemo repellendus est non vero consectetur doloribus rem accusamus labore perspiciatis! Iure adipisci quos error. Sequi dolor error deserunt deleniti ipsum.</p>
         </div>
       </div>
     </div>
   </section>
+  <script src="./dist/custom/js/main.js"></script>
   <script src="./dist/plugins/bootstrap/js/bootstrap.js"></script>
 </body>
 </html>
