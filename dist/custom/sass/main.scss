@@ -10,12 +10,13 @@ html{
   scroll-behavior: smooth;
 }
 
+
+p{
+  margin-bottom: 0;
+}
+
 body{
   font-family: $font-family;
-  
-
-  
-
 }
 
 img{
@@ -28,6 +29,18 @@ section{
 }
 
 //COMPONENT
+
+.tee-primary{
+  &__btn{
+    background-color:  $first-color;
+    color: #f4f4f4;
+
+    &:hover{
+      background-color: darken($color: $first-color, $amount: 10);
+      color: #f4f4f4;
+    }
+  }
+}
 .tee-heading{
 
   text-align: center;
@@ -138,7 +151,6 @@ header{
       height: 100vh;
       display: none !important;
       background: rgba($color: $first-color-accent, $alpha: .8);
-
       &.active{
         display: flex !important;
       }
@@ -228,3 +240,27 @@ header{
   background: $gray;
 }
 
+.slide-notifier{
+  background: url('../../assets/images/tyson-hzNavqkrQUA-unsplash.jpg') center;
+  background-blend-mode: color-burn;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  padding: 5rem 0;
+  .container{
+    height: 100% !important;
+  }
+
+  .sized-box{
+    p{
+      color: rgba($color: lighten($first-color-accent, 20), $alpha: .8);
+      font-weight: 700;
+      font-size: 3rem;
+      text-shadow: 0 4px 6px rgba(0,0,0,0.8);
+      background: url('../../assets/images/tyson-hzNavqkrQUA-unsplash.jpg') center;
+      background-size: cover;
+      background-clip: text;
+
+    }
+  }
+}
